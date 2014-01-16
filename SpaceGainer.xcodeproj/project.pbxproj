@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		033C4879188721C800721BB6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033C4878188721C800721BB6 /* Cocoa.framework */; };
+		033C4883188721C800721BB6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 033C4881188721C800721BB6 /* InfoPlist.strings */; };
+		033C4885188721C800721BB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 033C4884188721C800721BB6 /* main.m */; };
+		033C4889188721C800721BB6 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 033C4887188721C800721BB6 /* Credits.rtf */; };
+		033C488C188721C800721BB6 /* UBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 033C488B188721C800721BB6 /* UBAppDelegate.m */; };
+		033C488F188721C800721BB6 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 033C488D188721C800721BB6 /* MainWindow.xib */; };
+		033C4891188721C800721BB6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 033C4890188721C800721BB6 /* Images.xcassets */; };
+		036FABC91887279D00639B5F /* UBFolderScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 036FABC81887279D00639B5F /* UBFolderScanner.m */; };
+		036FABCD1887348C00639B5F /* libSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 036FABCC1887348C00639B5F /* libSystem.dylib */; };
+		036FABD01887618800639B5F /* UBAppDelegate+TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 036FABCF1887618800639B5F /* UBAppDelegate+TableView.m */; };
+		03CE86C51887ECFB0025E40E /* UBFolderScannerResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CE86C41887ECFB0025E40E /* UBFolderScannerResults.m */; };
+		03CE86CC1888016F0025E40E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033C4897188721C800721BB6 /* XCTest.framework */; };
+		03CE86D21888016F0025E40E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03CE86D01888016F0025E40E /* InfoPlist.strings */; };
+		03CE86E0188803980025E40E /* SpaceGainerTests+DataHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CE86DF188803980025E40E /* SpaceGainerTests+DataHandling.m */; };
+		03CE86E1188808D10025E40E /* SpaceGainerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CE86BB1887EB380025E40E /* SpaceGainerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03CE86D61888016F0025E40E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 033C486D188721C800721BB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 033C4874188721C800721BB6;
+			remoteInfo = SpaceGainer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		033C4875188721C800721BB6 /* SpaceGainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceGainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		033C4878188721C800721BB6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		033C487B188721C800721BB6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		033C487C188721C800721BB6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		033C487D188721C800721BB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		033C4880188721C800721BB6 /* SpaceGainer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpaceGainer-Info.plist"; sourceTree = "<group>"; };
+		033C4882188721C800721BB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		033C4884188721C800721BB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		033C4886188721C800721BB6 /* SpaceGainer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpaceGainer-Prefix.pch"; sourceTree = "<group>"; };
+		033C4888188721C800721BB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		033C488A188721C800721BB6 /* UBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBAppDelegate.h; sourceTree = "<group>"; };
+		033C488B188721C800721BB6 /* UBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBAppDelegate.m; sourceTree = "<group>"; };
+		033C488E188721C800721BB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		033C4890188721C800721BB6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		033C4897188721C800721BB6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		036FABC71887279D00639B5F /* UBFolderScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBFolderScanner.h; sourceTree = "<group>"; };
+		036FABC81887279D00639B5F /* UBFolderScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBFolderScanner.m; sourceTree = "<group>"; };
+		036FABCC1887348C00639B5F /* libSystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.dylib; path = usr/lib/libSystem.dylib; sourceTree = SDKROOT; };
+		036FABCE1887618800639B5F /* UBAppDelegate+TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UBAppDelegate+TableView.h"; sourceTree = "<group>"; };
+		036FABCF1887618800639B5F /* UBAppDelegate+TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UBAppDelegate+TableView.m"; sourceTree = "<group>"; };
+		03CE86B71887EB380025E40E /* SpaceGainer Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpaceGainer Tests-Info.plist"; sourceTree = "<group>"; };
+		03CE86B91887EB380025E40E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		03CE86BB1887EB380025E40E /* SpaceGainerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceGainerTests.m; sourceTree = "<group>"; };
+		03CE86BD1887EB380025E40E /* SpaceGainer Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpaceGainer Tests-Prefix.pch"; sourceTree = "<group>"; };
+		03CE86C31887ECFB0025E40E /* UBFolderScannerResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBFolderScannerResults.h; sourceTree = "<group>"; };
+		03CE86C41887ECFB0025E40E /* UBFolderScannerResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBFolderScannerResults.m; sourceTree = "<group>"; };
+		03CE86CB1888016F0025E40E /* SpaceGainer Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SpaceGainer Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CE86CF1888016F0025E40E /* SpaceGainer Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpaceGainer Tests-Info.plist"; sourceTree = "<group>"; };
+		03CE86D11888016F0025E40E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		03CE86D31888016F0025E40E /* SpaceGainer_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceGainer_Tests.m; sourceTree = "<group>"; };
+		03CE86D51888016F0025E40E /* SpaceGainer Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpaceGainer Tests-Prefix.pch"; sourceTree = "<group>"; };
+		03CE86DD188801C50025E40E /* SpaceGainerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceGainerTests.h; sourceTree = "<group>"; };
+		03CE86DE188803980025E40E /* SpaceGainerTests+DataHandling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SpaceGainerTests+DataHandling.h"; sourceTree = "<group>"; };
+		03CE86DF188803980025E40E /* SpaceGainerTests+DataHandling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SpaceGainerTests+DataHandling.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		033C4872188721C800721BB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				036FABCD1887348C00639B5F /* libSystem.dylib in Frameworks */,
+				033C4879188721C800721BB6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03CE86C81888016F0025E40E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03CE86CC1888016F0025E40E /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		033C486C188721C800721BB6 = {
+			isa = PBXGroup;
+			children = (
+				033C487E188721C800721BB6 /* SpaceGainer */,
+				03CE86B51887EB380025E40E /* SpaceGainer Tests */,
+				03CE86CD1888016F0025E40E /* SpaceGainer Tests */,
+				033C4877188721C800721BB6 /* Frameworks */,
+				033C4876188721C800721BB6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		033C4876188721C800721BB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				033C4875188721C800721BB6 /* SpaceGainer.app */,
+				03CE86CB1888016F0025E40E /* SpaceGainer Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		033C4877188721C800721BB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				036FABCC1887348C00639B5F /* libSystem.dylib */,
+				033C4878188721C800721BB6 /* Cocoa.framework */,
+				033C4897188721C800721BB6 /* XCTest.framework */,
+				033C487A188721C800721BB6 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		033C487A188721C800721BB6 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				033C487B188721C800721BB6 /* AppKit.framework */,
+				033C487C188721C800721BB6 /* CoreData.framework */,
+				033C487D188721C800721BB6 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		033C487E188721C800721BB6 /* SpaceGainer */ = {
+			isa = PBXGroup;
+			children = (
+				036FABCA188727A500639B5F /* Classes */,
+				036FABCB188727F500639B5F /* Resources */,
+			);
+			path = SpaceGainer;
+			sourceTree = "<group>";
+		};
+		033C487F188721C800721BB6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				033C4880188721C800721BB6 /* SpaceGainer-Info.plist */,
+				033C4881188721C800721BB6 /* InfoPlist.strings */,
+				033C4884188721C800721BB6 /* main.m */,
+				033C4886188721C800721BB6 /* SpaceGainer-Prefix.pch */,
+				033C4887188721C800721BB6 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		036FABCA188727A500639B5F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				036FABD11887619500639B5F /* AppDelegate */,
+				03CE86C61887ED780025E40E /* Scanning */,
+			);
+			name = Classes;
+			path = SpaceGainer/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		036FABCB188727F500639B5F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				033C488D188721C800721BB6 /* MainWindow.xib */,
+				033C4890188721C800721BB6 /* Images.xcassets */,
+				033C487F188721C800721BB6 /* Supporting Files */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		036FABD11887619500639B5F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				033C488A188721C800721BB6 /* UBAppDelegate.h */,
+				033C488B188721C800721BB6 /* UBAppDelegate.m */,
+				036FABCE1887618800639B5F /* UBAppDelegate+TableView.h */,
+				036FABCF1887618800639B5F /* UBAppDelegate+TableView.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		03CE86B51887EB380025E40E /* SpaceGainer Tests */ = {
+			isa = PBXGroup;
+			children = (
+				03CE86DD188801C50025E40E /* SpaceGainerTests.h */,
+				03CE86BB1887EB380025E40E /* SpaceGainerTests.m */,
+				03CE86DE188803980025E40E /* SpaceGainerTests+DataHandling.h */,
+				03CE86DF188803980025E40E /* SpaceGainerTests+DataHandling.m */,
+				03CE86B61887EB380025E40E /* Supporting Files */,
+			);
+			path = "SpaceGainer Tests";
+			sourceTree = "<group>";
+		};
+		03CE86B61887EB380025E40E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03CE86B71887EB380025E40E /* SpaceGainer Tests-Info.plist */,
+				03CE86B81887EB380025E40E /* InfoPlist.strings */,
+				03CE86BD1887EB380025E40E /* SpaceGainer Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		03CE86C61887ED780025E40E /* Scanning */ = {
+			isa = PBXGroup;
+			children = (
+				036FABC71887279D00639B5F /* UBFolderScanner.h */,
+				036FABC81887279D00639B5F /* UBFolderScanner.m */,
+				03CE86C31887ECFB0025E40E /* UBFolderScannerResults.h */,
+				03CE86C41887ECFB0025E40E /* UBFolderScannerResults.m */,
+			);
+			name = Scanning;
+			sourceTree = "<group>";
+		};
+		03CE86CD1888016F0025E40E /* SpaceGainer Tests */ = {
+			isa = PBXGroup;
+			children = (
+				03CE86D31888016F0025E40E /* SpaceGainer_Tests.m */,
+				03CE86CE1888016F0025E40E /* Supporting Files */,
+			);
+			path = "SpaceGainer Tests";
+			sourceTree = "<group>";
+		};
+		03CE86CE1888016F0025E40E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03CE86CF1888016F0025E40E /* SpaceGainer Tests-Info.plist */,
+				03CE86D01888016F0025E40E /* InfoPlist.strings */,
+				03CE86D51888016F0025E40E /* SpaceGainer Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		033C4874188721C800721BB6 /* SpaceGainer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 033C48A6188721C800721BB6 /* Build configuration list for PBXNativeTarget "SpaceGainer" */;
+			buildPhases = (
+				033C4871188721C800721BB6 /* Sources */,
+				033C4872188721C800721BB6 /* Frameworks */,
+				033C4873188721C800721BB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpaceGainer;
+			productName = SpaceGainer;
+			productReference = 033C4875188721C800721BB6 /* SpaceGainer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03CE86CA1888016F0025E40E /* SpaceGainer Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03CE86D81888016F0025E40E /* Build configuration list for PBXNativeTarget "SpaceGainer Tests" */;
+			buildPhases = (
+				03CE86C71888016F0025E40E /* Sources */,
+				03CE86C81888016F0025E40E /* Frameworks */,
+				03CE86C91888016F0025E40E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03CE86D71888016F0025E40E /* PBXTargetDependency */,
+			);
+			name = "SpaceGainer Tests";
+			productName = "SpaceGainer Tests";
+			productReference = 03CE86CB1888016F0025E40E /* SpaceGainer Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		033C486D188721C800721BB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = UB;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = TBM;
+				TargetAttributes = {
+					03CE86CA1888016F0025E40E = {
+						TestTargetID = 033C4874188721C800721BB6;
+					};
+				};
+			};
+			buildConfigurationList = 033C4870188721C800721BB6 /* Build configuration list for PBXProject "SpaceGainer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 033C486C188721C800721BB6;
+			productRefGroup = 033C4876188721C800721BB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				033C4874188721C800721BB6 /* SpaceGainer */,
+				03CE86CA1888016F0025E40E /* SpaceGainer Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		033C4873188721C800721BB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033C4883188721C800721BB6 /* InfoPlist.strings in Resources */,
+				033C4891188721C800721BB6 /* Images.xcassets in Resources */,
+				033C4889188721C800721BB6 /* Credits.rtf in Resources */,
+				033C488F188721C800721BB6 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03CE86C91888016F0025E40E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03CE86D21888016F0025E40E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		033C4871188721C800721BB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03CE86C51887ECFB0025E40E /* UBFolderScannerResults.m in Sources */,
+				033C4885188721C800721BB6 /* main.m in Sources */,
+				036FABD01887618800639B5F /* UBAppDelegate+TableView.m in Sources */,
+				033C488C188721C800721BB6 /* UBAppDelegate.m in Sources */,
+				036FABC91887279D00639B5F /* UBFolderScanner.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03CE86C71888016F0025E40E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03CE86E1188808D10025E40E /* SpaceGainerTests.m in Sources */,
+				03CE86E0188803980025E40E /* SpaceGainerTests+DataHandling.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03CE86D71888016F0025E40E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 033C4874188721C800721BB6 /* SpaceGainer */;
+			targetProxy = 03CE86D61888016F0025E40E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		033C4881188721C800721BB6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				033C4882188721C800721BB6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		033C4887188721C800721BB6 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				033C4888188721C800721BB6 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		033C488D188721C800721BB6 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				033C488E188721C800721BB6 /* Base */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		03CE86B81887EB380025E40E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03CE86B91887EB380025E40E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		03CE86D01888016F0025E40E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03CE86D11888016F0025E40E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		033C48A4188721C800721BB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		033C48A5188721C800721BB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		033C48A7188721C800721BB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpaceGainer/SpaceGainer-Prefix.pch";
+				INFOPLIST_FILE = "SpaceGainer/SpaceGainer-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		033C48A8188721C800721BB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpaceGainer/SpaceGainer-Prefix.pch";
+				INFOPLIST_FILE = "SpaceGainer/SpaceGainer-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		03CE86D91888016F0025E40E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpaceGainer.app/Contents/MacOS/SpaceGainer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpaceGainer Tests/SpaceGainer Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SpaceGainer Tests/SpaceGainer Tests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		03CE86DA1888016F0025E40E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpaceGainer.app/Contents/MacOS/SpaceGainer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpaceGainer Tests/SpaceGainer Tests-Prefix.pch";
+				INFOPLIST_FILE = "SpaceGainer Tests/SpaceGainer Tests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		033C4870188721C800721BB6 /* Build configuration list for PBXProject "SpaceGainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				033C48A4188721C800721BB6 /* Debug */,
+				033C48A5188721C800721BB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		033C48A6188721C800721BB6 /* Build configuration list for PBXNativeTarget "SpaceGainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				033C48A7188721C800721BB6 /* Debug */,
+				033C48A8188721C800721BB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03CE86D81888016F0025E40E /* Build configuration list for PBXNativeTarget "SpaceGainer Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03CE86D91888016F0025E40E /* Debug */,
+				03CE86DA1888016F0025E40E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 033C486D188721C800721BB6 /* Project object */;
+}
